@@ -14,7 +14,7 @@ const MainStyled = styled.div`
   
   background-color: #969696;
   .Navbar {
-    background-color: pink;
+    background-color: #000000;
     padding-left: 10px;
     width: 18%;
   }
