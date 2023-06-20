@@ -1,7 +1,7 @@
 import React from "react";
 import ListPopular from "./ListPopular";
 import styled from "styled-components";
-
+import { data } from "../../data";
 const Sidebarifo = styled.div`
   margin: 10px;
   .title {
@@ -46,8 +46,10 @@ const Sidebarifo = styled.div`
     background-color: red;
     border-radius: 5px;
     outline: none;
-    border:none ;
+    border: none;
     padding: 7px;
+    color: white;
+    margin-top: 10px;
   }
 `;
 const Sidebar = () => {
@@ -65,15 +67,21 @@ const Sidebar = () => {
           </button>
         </div>
       </div>
+
       <div className="">
         <h3 className="title">Popular movies</h3>
-        <ListPopular></ListPopular>
+        {data.map((item, index) => (
+          <ListPopular item={item}></ListPopular>
+        ))}
       </div>
+
       <button className="seemore">See more</button>
 
       <div className="">
         <h3 className="title">WatchsLists</h3>
-        <ListPopular></ListPopular>
+        {data.map((item, index) => (
+          <ListPopular item={item}></ListPopular>
+        ))}
       </div>
       <button className="seemore">See more</button>
     </Sidebarifo>
