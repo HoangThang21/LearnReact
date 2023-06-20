@@ -68,7 +68,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className="" >
         <h3 className="title">Popular movies</h3>
         {data.map((item, index) => (
           <ListPopular item={item}></ListPopular>
