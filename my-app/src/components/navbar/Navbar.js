@@ -1,10 +1,10 @@
 import React from 'react';
 import { CiBoxList } from 'react-icons/ci';
-
+import "./css-navbar.scss";
 const Navbar = () => {
     return (
         
-        <nav>
+        <nav className='backgound'>
         <div>
             <a>TPOne</a>
             <a>
@@ -14,8 +14,9 @@ const Navbar = () => {
         <div>
             <ul>
                 <li>
+                    <div class="a-nav-menu">
                     <a href='#'><CiBoxList/>Menu</a>
-                    
+                    </div>
                 </li>
                     
                 <li>

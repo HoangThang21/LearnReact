@@ -42,6 +42,7 @@ const MainStyled = styled.div`
   }
   display: flex;
   .Navbar {
+    background-color: pink;
     padding-left: 10px;
     width: 18%;
   }
