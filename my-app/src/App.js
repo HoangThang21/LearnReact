@@ -1,8 +1,8 @@
 import Main from "./components/Main";
-
+import "./App.css";
 function App() {
   return (
-    <div>
+    <div className="app">
       <Main></Main>
     </div>
   );

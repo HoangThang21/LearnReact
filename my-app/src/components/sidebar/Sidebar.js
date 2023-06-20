@@ -41,10 +41,13 @@ const Sidebarifo = styled.div`
     width: 1.3em;
     fill: #b4b4b4;
   }
-  .seemore{
+  .seemore {
     width: 100%;
     background-color: red;
-    
+    border-radius: 5px;
+    outline: none;
+    border:none ;
+    padding: 7px;
   }
 `;
 const Sidebar = () => {
@@ -66,6 +69,7 @@ const Sidebar = () => {
         <h3 className="title">Popular movies</h3>
         <ListPopular></ListPopular>
       </div>
+      <button className="seemore">See more</button>
 
       <div className="">
         <h3 className="title">WatchsLists</h3>

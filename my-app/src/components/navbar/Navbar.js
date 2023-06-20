@@ -1,6 +1,6 @@
 import React from 'react';
 import { CiBoxList } from 'react-icons/ci';
-import "./css-navbar.scss";
+import "./sass/css-navbar.scss"
 const Navbar = () => {
     return (
         
