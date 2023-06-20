@@ -42,8 +42,10 @@ const MainStyled = styled.div`
   }
   display: flex;
   .Navbar {
+    padding-left : 10px;
     width: 18%;
   }
+  
   .Body {
     width: 60%;
   }
