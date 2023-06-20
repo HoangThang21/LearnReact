@@ -1,8 +1,57 @@
 import React from "react";
+import styled from "styled-components";
 
+const ListP = styled.div`
+  .tabpopular {
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    background-color: #242424;
+  }
+  .img-film {
+    width: 80px;
+    height: 80px;
+    img {
+      border-radius: 8px;
+    }
+  }
+  .ifo-tab {
+    padding-left: 10px;
+    color: white;
+  }
+  .Year-Star {
+    display: flex;
+    width: 170px;
+    p {
+      color: #8f8f8f;
+      font-weight: 300;
+    }
+  }
+  .Star {
+    margin-left: 100px;
+  }
+  .action-theloai{
+    button{
+        background-color: transparent;
+        border: 1px solid #8f8f8f;
+        color: white;
+        text-align: center;
+        width: auto;
+        padding:0 5px;
+        font-size: 11px;
+       
+    }
+    .btn-2{
+        margin:0 5px;
+    }
+  }
+  .action-theloai:nth-child(2){
+   
+  }
+`;
 const ListPopular = () => {
   return (
-    <div>
+    <ListP>
       <div className="tabpopular">
         <div className="img-film">
           <img
@@ -18,10 +67,15 @@ const ListPopular = () => {
               <p>10</p>
             </div>
           </div>
-          <button>Action</button>
+          <div className="action-theloai">
+            <button>Action</button>
+             <button className="btn-2">Action</button>
+            <button>Action</button>
+          </div>
+       
         </div>
       </div>
-    </div>
+    </ListP>
   );
 };
 
