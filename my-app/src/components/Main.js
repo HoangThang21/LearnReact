@@ -32,7 +32,7 @@ const MainStyled = styled.div`
     cursor: pointer;
 
     outline: none;
-    border: 0;
+
   }
   body {
     min-height: 100vh;
@@ -42,10 +42,10 @@ const MainStyled = styled.div`
   }
   display: flex;
   .Navbar {
-    padding-left : 10px;
+    padding-left: 10px;
     width: 18%;
   }
-  
+
   .Body {
     width: 60%;
   }
@@ -53,6 +53,7 @@ const MainStyled = styled.div`
     width: 22%;
   }
 `;
+
 const Main = () => {
   return (
     <MainStyled>
