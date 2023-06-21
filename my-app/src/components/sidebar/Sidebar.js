@@ -35,7 +35,6 @@ const Sidebarifo = styled.div`
     margin-top: 0.1em;
     margin-right: 20px;
   }
-
   .search__icon {
     height: 1.3em;
     width: 1.3em;
@@ -68,10 +67,18 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="" >
+      <div className="">
         <h3 className="title">Popular movies</h3>
         {data.map((item, index) => (
-          <ListPopular item={item}></ListPopular>
+          <ListPopular
+            name={item.name}
+            img={item.img}
+            year={item.year}
+            star={item.star}
+            category1={item.category1}
+            category2={item.category2}
+            category3={item.category3}
+          ></ListPopular>
         ))}
       </div>
 
